@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNET TECHNOLOGY TRAINING SCHOOL - Home</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="home-page">
+    <header>
+        <h1>VANLEE COMPUTERS </h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="menu-icon" alt="Menu">
+            <img src="close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="close-icon" alt="Close">
+        </label>
+        <nav>
+            <ul class="sidebar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+            </ul>
+            
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <section class="team-slideshow">
+        <h2></h2>
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="img 1.jpeg" alt="Team Member 1">
+            </div>
+            <div class="slide">
+                <img src="img 2.jpeg" alt="Team Member 2">
+            </div>
+            <div class="slide">
+                <img src="img 3.jpeg" alt="Team Member 3">
+            </div>
+            <div class="slide">
+                <img src="img 4.jpeg" alt="Team Member 3">
+            </div>
+            <div class="slide">
+                <img src="img 5.jpeg" alt="Team Member 3">
+            </div>
+            <div class="slide">
+                <img src="Bcard.jpeg" alt="Team Member 3">
+            </div>
+        </div>
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide');
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[index].classList.add('active');
+            }
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+            setInterval(nextSlide, 3000); // Change slide every 3 seconds
+        </script>
+    </section>
+    <section class="hero">
+   
+        <a href="courses.html" style="background-color: #007bff; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px;">Explore Courses</a>
+    </section>
+ 
+    <footer>
+       
+            <strong>
+            <p>Email: <a href="mailto:vanleecomputersalesandservices@gmail.com">vanleecomputersalesandservices@gmail.com</a></p>
+            <p>Location: Corner Stone Plaza Building, Kafumbe Mukasa Road, Shop Number EF10, Kampala</p>
+            <p>Phone: +254 768 271 110</p>
+            <p>Hours: Monday - Sunday: Always Open</p>
+            </strong>
+        
+            <a href="https://wa.me/256766827110?text=Hello%20VANLEE%20Computer%20Sales" target="_blank">WhatsApp</a>
+            <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a>
+            <a href="https://maps.google.com/?q=Kafumbe+Mukasa+Road,+Kampala" target="_blank">Google Maps</a>
+        
+    
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+               
+            </ul>
+        </nav>
+        <p>&copy; 2023 VANLEE COMPUTER ACCESSORIES SALES and IT TRAINING SCHOOL. All rights reserved.</p>
+    </footer>
+    <script>
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            if (currentPath.includes(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+
+        // Hamburger menu toggle functionality
+        const check = document.getElementById('check');
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                check.checked = false; // Close menu when a link is clicked
+            });
+        });
+    </script>
+</body>
+</html>

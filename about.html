@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNET TECHNOLOGY TRAINING SCHOOL - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>VANLEE COMPUTERS</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="menu-icon" alt="Menu">
+            <img src="close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="close-icon" alt="Close">
+        </label>
+        <nav>
+            <ul class="sidebar">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+            </ul>
+             <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section contact-section" style="margin-top: 60px;">
+        <div class="content-overlay">
+            <h2>About VANLEE Computer Accessories Sales & IT Training School</h2>
+            <p>Welcome to VANLEE Computer Accessories Sales and IT Training School, your trusted partner in the world of technology and education. Located in the heart of Kampala at Corner Stone Plaza Building, Kafumbe Mukasa Road, Shop Number EF10, we have been serving the community with excellence since our establishment.</p>
+
+            <h3>Our Mission</h3>
+            <p>Our mission is to empower individuals and businesses with cutting-edge technology solutions and comprehensive IT training. We strive to bridge the digital divide by providing accessible, high-quality computer accessories, repair services, and educational programs that prepare our clients for the challenges and opportunities of the digital age.</p>
+
+            <h3>What We Offer</h3>
+            <div class="about-blocks">
+                <div class="about-block">
+                    <h4>Computer Sales & Accessories</h4>
+                    <p>We offer a wide range of computer products including laptops from top brands like Dell, HP, Acer, Lenovo, Toshiba, and more. Our inventory includes accessories such as keyboards, mice, monitors, printers, batteries, RAM chips, SSDs, HDDs, and various other tech essentials.</p>
+                </div>
+                <div class="about-block">
+                    <h4>Repair & Maintenance Services</h4>
+                    <p>Our certified technicians provide expert repair and maintenance services for all types of electronic devices. From software installation and troubleshooting to hardware repairs, we ensure your devices are running optimally.</p>
+                </div>
+                <div class="about-block">
+                    <h4>IT Training Programs</h4>
+                    <p>Through our INTERNET TECHNOLOGY TRAINING SCHOOL, we offer comprehensive courses in various IT fields. Our experienced instructors provide hands-on training to equip you with practical skills for the digital world.</p>
+                </div>
+                <div class="about-block">
+                    <h4>Field Services</h4>
+                    <p>We provide on-site services including camera installation, solar system setup, WiFi installation, and other field activities. Our skilled team ensures professional installation and setup for homes and businesses.</p>
+                </div>
+            </div>
+
+            <h3>Why Choose VANLEE?</h3>
+            <ul>
+                <li><strong>Quality Products:</strong> We source our products from reputable manufacturers to ensure reliability and performance.</li>
+                <li><strong>Expert Service:</strong> Our team of professionals is dedicated to providing exceptional customer service.</li>
+                <li><strong>Competitive Pricing:</strong> We offer fair prices and special deals for our valued customers.</li>
+                <li><strong>Warranty & Support:</strong> All our products come with warranties, and we provide ongoing support.</li>
+                <li><strong>Convenient Location:</strong> Easily accessible in Kampala's Corner Stone Plaza Building.</li>
+                <li><strong>Flexible Hours:</strong> Open Monday to Sunday to serve you at your convenience.</li>
+            </ul>
+
+            <h3>Our Commitment</h3>
+            <p>At VANLEE, we are committed to staying at the forefront of technological advancements and educational excellence. We continuously update our inventory and training programs to meet the evolving needs of our clients. Your satisfaction and success are our top priorities, and we look forward to serving you.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="contact-info">
+            <strong>
+            <p>Email: <a href="mailto:vanleecomputersalesandservices@gmail.com">vanleecomputersalesandservices@gmail.com</a></p>
+            <p>Location: Corner Stone Plaza Building, Kafumbe Mukasa Road, Shop Number EF10, Kampala</p>
+            <p>Phone: +254 768 271 110</p>
+            <p>Hours: Monday - Sunday: Always Open</p>
+            </strong>
+            <div class="social-links">
+                <a href="https://wa.me/0766827110?text=Hello%20from%20VANLEE%20Computer%20Sales" target="_blank">WhatsApp</a>
+                <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a>
+                <a href="https://maps.google.com/?q=Kafumbe+Mukasa+Road,+Kampala" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2023 VANLEE COMPUTER ACCESSORIES SALES and IT TRAINING SCHOOL. All rights reserved.</p>
+    </footer>
+    <script>
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            if (currentPath.includes(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+
+        // Hamburger menu toggle functionality
+        const check = document.getElementById('check');
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                check.checked = false; // Close menu when a link is clicked
+            });
+        });
+    </script>
+</body>
+</html>

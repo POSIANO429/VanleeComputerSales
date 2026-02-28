@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNET TECHNOLOGY TRAINING SCHOOL - Sales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>VANLEE COMPUTERS</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="menu-icon" alt="Menu">
+            <img src="close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" class="close-icon" alt="Close">
+        </label>
+        <nav>
+            <ul class="sidebar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+            </ul>
+
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+            </ul>
+         
+        </nav>
+    </header>
+    <section class="section" style="margin-top: 80px;">
+        <h2>PRODUCTS</h2>
+        <p>Contact us for all kinds of accessories,<br>computer repair and maintainace,<br>software installation and update,
+            <br>Troubleshoting of all electronic devices  .</p>
+        <p>Special offers available for customers after purchase.</p>
+
+        <h2>Products and Accessories</h2>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; position: fixed; top: 184px; right: 20px; background-color: white; padding: 0.5rem; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000;">
+            <select id="categorySelect">
+                <option value="all">All</option>
+                <option value="accessories">Accessories</option>
+                <option value="products">Products</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Search products..." style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; width: 200px;">
+        </div>
+        <div id="productsContainer" class="courses">
+            <!-- Accessories -->
+             <div class="course product" data-category="accessories">
+
+                    <img src="hp.jpg" alt="Keyboard">
+                </a>
+                <h3>Hp laptops</h3>
+                <p>Hp laptops available in all sizes, colors, generation and cores.</p>
+                <p>Price: Negotiable</p>
+            </div><div class="course product" data-category="accessories">
+
+                    <img src="dell.jpg" alt="Keyboard">
+                </a>
+                <h3>Dell laptops</a></h3>
+                <p>Dell latitude laptos in all cores and generations.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            
+            <div class="course product" data-category="accessories">
+
+                    <img src="acer.jpg" alt="Keyboard">
+                </a>
+                <h3>Acer laptops</h3>
+                <p>Acer laptops all available in all sizes and we do deliveries.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="accessories">
+
+                    <img src="macbook.jpg" alt="macbook">
+                </a>
+                <h3>Macbook laptops</h3>
+                <p>Macbook laptops in all years from 2012 to 2019 and in all colors.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            
+            <div class="course product" data-category="mackook">
+
+                    <img src="lenovo.jpg" alt="lenovo">
+                </a>
+                <h3>Lenovo</h3>
+                <p>Lenovo thinkpad laptops in all sizes, cores and generations.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            
+            <div class="course product" data-category="accessories">
+
+                    <img src="toshibah.jpg" alt="Toshiba">
+                </a>
+                <h3>Toshiba</h3>
+                <p>In all generations and cores reach on us we do business.</p>
+                <p>Price: Negotiable</p>
+            </div>
+             <div class="course product" data-category="accessories">
+
+                    <img src="geo.jpg" alt="geo">
+                </a>
+                <h3>Geo laptops</h3>
+                <p>In all sizes cores and their accessories.</p>
+                <p>Price: Negotiable</p>
+            </div>
+
+            <div class="course product" data-category="accessories">
+
+                    <img src="Samsung.jpg" alt="geo">
+                </a>
+                <h3>Sansung</h3>
+                <p>Sansumg laptops in all types reach on us and we do servicing.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="accessories">
+
+                    <img src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=300&h=200&fit=crop" alt="Keyboard">
+                </a>
+                <h3>Keyboards</h3>
+                <p>Mechanical and membrane keyboards for efficient typing.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="accessories">
+
+                    <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=300&h=200&fit=crop" alt="Mice">
+                </a>
+                <h3>Mice</h3>
+                <p>Wireless and wired mice for precise control.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="accessories">
+
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300&h=200&fit=crop" alt="Monitor">
+                </a>
+                <h3>Monitors</h3>
+                <p>High-resolution displays for better productivity.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="accessories">
+              
+                    <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=300&h=200&fit=crop" alt="Headsets">
+                </a>
+                <h3>Headsets</h3>
+                <p>Audio headsets for calls and gaming.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="accessories">
+     
+                    <img src="battries.jpg" alt="Batteries">
+                </a>
+                <h3>Batteries</h3>
+                <p>Rechargeable batteries for laptops and devices. Compatible with HP, Dell, Toshiba, and more.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="accessories">
+
+                    <img src="printers.jpg" alt="Printers">
+                </a>
+                <h3>Printers</h3>
+                <p>All-in-one printers for home and office use.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="accessories">
+             
+                    <img src="ram chips.jpg" alt="Ram CHips">
+                </a>
+                <h3>USB Drives</h3>
+                <p>High-speed USB drives for data storage and transfer.</p>
+                <p>Price: Negotiable/p>
+            </div>
+             <div class="course product" data-category="accessories">
+             
+                    <img src="Bcard.jpeg" alt="Ram CHips">
+                </a>
+                <h3>Contact</h3>
+                <p>we are committed to meet all your nedds.</p>
+                <p>Price: Negotiable/p>
+            </div>
+            <!-- Products -->
+            <div class="course product" data-category="products">
+     
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300&h=200&fit=crop" alt="Gaming Laptop">
+                </a>
+                <h3>Gaming Laptop</h3>
+                <p>High-performance laptop for gaming enthusiasts.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="products">
+
+                    <img src="Desktop.jpg" alt="Desktop PC">
+                </a>
+                <h3>Desktop PC</h3>
+                <p>Powerful desktop for work and entertainment.</p>
+                <p>Price: Negotiable</p>
+            </div>
+            <div class="course product" data-category="products">
+
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300&h=200&fit=crop" alt="Smartphone">
+                </a>
+                <h3>Smartphone</h3>
+                <p>Latest smartphone with advanced features.</p>
+                <p>Price: Negotiable</p>
+            </div>
+             <div class="course product" data-category="products">
+
+                    <img src="ssd and hdd.jpg" alt="SSD and HDD">
+                </a>
+                <h3>HDD and SSD</h3>
+                <p>HDD and SSDs in all storage capacities.</p>
+                <p>Price: Negotiable</p>
+            </div>
+             <div class="course product" data-category="products">
+
+                    <img src="cameras.jpg" alt="Cameras">
+                </a>
+                <h3>Security Cameras</h3>
+                <p>Cameras in all types  digital and IP.</p>
+                <p>Price: Negotiable</p>
+            </div>
+             <div class="course product" data-category="products">
+
+                    <img src="vga.jpg" alt="vga">
+                </a>
+                <h3>VGA's</h3>
+                <p>VGAs in all types for ur computers,pc.</p>
+                <p>Price: Negotiable</p>
+            </div> 
+            <div class="course product" data-category="products">
+
+                    <img src="hdmis.jpg" alt="hdmi">
+                </a>
+                <h3>HDMIs</h3>
+                <p>HDMIs in all types reach us.</p>
+                <p>Price: Negotiable</p>
+            </div>
+             <div class="course product" data-category="products">
+
+                    <img src="foam.jpg" alt="foam">
+                </a>
+                <h3>FOAM CLEANER</h3>
+                <p>For the good look of your PC.</p>
+                <p>Price: Negotiable</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 50px 0; padding: 20px; background-image: url('rain.jpg'); border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="color: white; font-size: 2.5em; margin-bottom: 20px;">OUR OFFERS</h2>
+            <ul style="list-style: none; padding: 0; font-size: 1.2em; color: white;">
+                <li style="margin-bottom: 15px;"><strong>Free Windows Installation:</strong> Seamlessly set up the latest Windows OS on your device, ensuring optimal performance and security without any hassle.</li>
+                <li style="margin-bottom: 15px;"><strong>Convenient Delivery:</strong> Enjoy doorstep delivery of your purchases, bringing quality tech right to your location with utmost care and timeliness.</li>
+                <li style="margin-bottom: 15px;"><strong>Comprehensive Warranty:</strong> Rest assured with our robust warranty coverage, protecting your investment against unforeseen issues for peace of mind.</li>
+                <li style="margin-bottom: 15px;"><strong>Expert Computer Repair and Maintenance:</strong> Trust our skilled technicians to diagnose and fix hardware woes, keeping your systems running smoothly.</li>
+                <li style="margin-bottom: 15px;"><strong>Software Installation and Updates:</strong> Effortlessly install and update essential software, enhancing functionality and safeguarding against vulnerabilities.</li>
+                <li><p><strong style="color:red; margin: bottom 15px;">Troubleshooting of Electronic Devices:</p></strong> Resolve glitches and errors across all your gadgets with our professional troubleshooting services, restoring full operation.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="contact-info">
+            <strong>
+            <p>Email: <a href="mailto:vanleecomputersalesandservices@gmail.com">vanleecomputersalesandservices@gmail.com</a></p>
+            <p>Location: Corner Stone Plaza Building, Kafumbe Mukasa Road, Shop Number EF10, Kampala</p>
+            <p>Phone: +254 768 271 110</p>
+            <p>Hours: Monday - Sunday: Always Open</p>
+            </strong>
+            <div class="social-links">
+                <a href="https://wa.me/256766827110?text=Hello%20VANLEE%20Computer%20Sales" target="_blank">WhatsApp</a>
+                <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a>
+                <a href="https://maps.google.com/?q=Kafumbe+Mukasa+Road,+Kampala" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+               <li><a href="sales.html">SALES</a></li>
+
+            </ul>
+        </nav>
+        <p>&copy; 2023 VANLEE COMPUTERs and IT TRAINING. All rights reserved.</p>
+    </footer>
+    <script>
+        const categorySelect = document.getElementById('categorySelect');
+        const searchInput = document.getElementById('searchInput');
+        const products = document.querySelectorAll('.product');
+
+        function filterProducts() {
+            const category = categorySelect.value;
+            const searchTerm = searchInput.value.toLowerCase();
+
+            products.forEach(product => {
+                const productCategory = product.getAttribute('data-category');
+                const productText = product.textContent.toLowerCase();
+                const categoryMatch = category === 'all' || productCategory === category;
+                const searchMatch = productText.includes(searchTerm);
+
+                if (categoryMatch && searchMatch) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        categorySelect.addEventListener('change', filterProducts);
+        searchInput.addEventListener('input', filterProducts);
+    </script>
+    <script>
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            if (currentPath.includes(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

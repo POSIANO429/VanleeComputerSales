@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNET TECHNOLOGY TRAINING SCHOOL - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>VANLEE COMPUTERS</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav>
+            <ul class="sidebar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+            </ul>
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="sales.html">SALES</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <section class="section contact-section" style="margin-top: 60px;">
+        <div class="content-overlay">
+            <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Kafumbe Mukasa Road, Kampala</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+254 7668 27 110</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:vanleecomputersalesandservices@gmail.com">vanleecomputersalesand<br>services@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <p>Monday - Sunday: Always Open</p>
+            </div>
+        </div>
+ 
+        
+<div id="formMessage"></div>
+
+        <div class="thanks-message">
+            <p>Thank you for reaching out! 😊 We're excited to help you with all your tech needs. Your message means a lot to us!</p>
+        </div>
+        <div class="praise-section">
+            <h3>Why Choose VANLEE Computer Accessories Sales & IT Training School?</h3>
+            <p>At VANLEE, we pride ourselves on delivering exceptional products and services that empower your tech journey. Our commitment to excellence has made us a trusted partner for countless clients across Kampala and beyond. We're not just selling accessories – we're building lasting relationships and ensuring your success in the digital world.</p>
+            <p>We're dedicated to continuing our service to you, standing by your side through every challenge and opportunity. Whether you need the latest computer accessories, comprehensive IT training, or ongoing support, we're here for the long haul. Your satisfaction and success are our top priorities, and we're ready to support you in any situation.</p>
+        </div>
+        <div class="trust-section">
+            <h3>Trusted Partnership with Unmatched Benefits</h3>
+            <p>Trust is the foundation of our business. We've built our reputation on reliability, quality, and genuine care for our clients. When you choose VANLEE, you're choosing a partner who values your business and invests in your success.</p>
+            <ul>
+                <li><strong>Exclusive Discounts:</strong> Enjoy special pricing on all our products and services as a valued client.</li>
+                <li><strong>6-Month Guarantee:</strong> We're so confident in our products and services that we offer a full 6-month guarantee on all purchases and training programs.</li>
+                <li><strong>Ongoing Support:</strong> Our relationship doesn't end at the sale we're here to support you every step of the way.</li>
+                <li><strong>Quality Assurance:</strong> Every product and service we provide meets the highest standards of quality and reliability.</li>
+            </ul>
+            <p>Choose VANLEE today and experience the difference that trust, quality, and dedicated service can make in your tech journey!</p>
+        </div>
+    </section>
+    <footer>
+        <div class="contact-info">
+            <strong>
+            <p>Email: <a href="mailto:vanleecomputersalesandservices@gmail.com">vanleecomputersales@gmail.com</a></p>
+            <p>Location: Corner Stone Plaza Building, Kafumbe Mukasa Road, Shop Number EF10, Kampala</p>
+            <p>Phone: +254 768 271 110</p>
+            <p>Hours: Monday - Sunday: Always Open</p>
+            </strong>
+            <div class="social-links">
+                <a href="https://wa.me/256766827110?text=Hello%20VANLEE%20Computer%20Sales" target="_blank">WhatsApp</a>
+                <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a>
+                
+                <a href="https://maps.google.com/?q=Kafumbe+Mukasa+Road,+Kampala" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                 <li><a href="sales.html">SALES</a></li>
+                
+            </ul>
+        </nav>
+        <p>&copy; 2023 VANLEE COMPUTER ACCESSORIES SALES and IT TRAINING SCHOOL. All rights reserved.</p>
+    </footer>
+    <script>
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            if (currentPath.includes(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+
+        // Hamburger menu toggle functionality
+        const check = document.getElementById('check');
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                check.checked = false; // Close menu when a link is clicked
+            });
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const formData = new FormData(contactForm);
+                const data = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    message: formData.get('message')
+                };
+
+                try {
+                    const response = await fetch('/api/contact-form', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        formMessage.innerHTML = '<p style="color: green;">Message sent successfully!</p>';
+                        contactForm.reset();
+                    } else {
+                        formMessage.innerHTML = '<p style="color: red;">Failed to send message. Please try again.</p>';
+                    }
+                } catch (error) {
+                    formMessage.innerHTML = '<p style="color: red;">Error: Unable to connect to server. Make sure the server is running.</p>';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
